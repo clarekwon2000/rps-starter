@@ -1,5 +1,7 @@
+from itertools import repeat
 from random import choice
 import os
+from turtle import goto
 
 # WELCOME PLAYER 
 
@@ -16,7 +18,7 @@ u = u.lower()
 if u != 'rock' and u != 'paper' and u != 'scissors':
     print("Invalid choice: Please select again.")
     exit()
-
+    
 # COMPUTER CHOICE 
 
 c = ['rock', 'paper', 'scissors']
@@ -47,10 +49,3 @@ elif u == "scissors":
 # END GAME
 
 print("Thanks for playing. Please play again!")
-
-
-
-
-
-
-

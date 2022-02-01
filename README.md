@@ -37,3 +37,4 @@ Run tests:
 ```sh
 pytest
 ```
+## Setup the Repo
