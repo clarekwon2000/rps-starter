@@ -2,7 +2,7 @@
 
 A Starter Repository for the [Rock Paper Scissors Exercise](https://github.com/prof-rossetti/intro-to-python/blob/main/exercises/rock-paper-scissors/README.md).
 
-## Setup
+## Setup the Repo
 
 Create a virtual environment:
 
@@ -38,4 +38,11 @@ Run tests:
 ```sh
 pytest
 ```
-## Setup the Repo
+## Environment Variable 
+
+## .env file 
+PLAYER_NAME = "Clare" python
+
+## or 
+## Pass Environment Variable 
+PLAYER_NAME = "Clare" python game.py
