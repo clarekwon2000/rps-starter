@@ -21,6 +21,15 @@ Install package dependencies (mainly for testing):
 ```sh
 pip install -r requirements.txt
 ```
+
+## Testing
+
+Run tests:
+
+```sh
+pytest
+```
+
 # Pass Environment Variable 
 
 ## Option 1: Command Line (Terminal) 
@@ -57,19 +66,18 @@ load_dotenv()
     player_name = os.getenv("PLAYER_NAME", default = "Player One")
 ```
 
-## Usage
+## Run the Game
 
 Run the rock paper scissors game:
+
+Option 1 
 
 ```sh
 PLAYER_NAME = "Clare" python game.py
 ```
 
-## Testing
-
-Run tests:
+Option 2 
 
 ```sh
-pytest
+python game.py
 ```
-
