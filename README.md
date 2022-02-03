@@ -26,6 +26,7 @@ pip install -r requirements.txt
 
 Run the rock paper scissors game:
 
+PLAYER_NAME="clarekwon2000" python game.py
 ```sh
 python game.py
 ```
