@@ -30,15 +30,15 @@ Run tests:
 pytest
 ```
 
-# Pass Environment Variable 
+## Pass Environment Variable 
 
-## Option 1: Command Line (Terminal) 
+Option 1: Command Line (Terminal) 
 ```sh
 PLAYER_NAME = "Your Name" python game.py
 ```
 ex) PLAYER_NAME = "Clare" python game.py
 
-## Option 2: Create an ".env." file in your repository
+Option 2: Create an ".env." file in your repository
 ```sh
 PLAYER_NAME = "Your Name" 
 ```
