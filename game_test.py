@@ -1,13 +1,4 @@
-
-
-
-#
-# FYI: this is to satisfy the OPTIONAL testing challenge objectives
-# ... https://github.com/prof-rossetti/intro-to-python/blob/main/exercises/rock-paper-scissors/challenges.md
-#
-
 from game import determine_winner
-
 
 def test_determination_of_the_winner():
 

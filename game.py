@@ -3,50 +3,56 @@ from random import choice
 import os
 from dotenv import load_dotenv
 
-# WELCOME PLAYER 
+def determine_winner (player_name,computer_action):
+    if u == computer_action:
+        print(f"Both players selected {u}. It's a tie!")
+    elif u == "rock": 
+        if computer_action == "scissors" :
+            print (f"Rock beats Scissors. {player_name} wins!")
+        else:
+            print (f"Paper beats Rock. {player_name} loses!")
+    elif u == "paper": 
+        if computer_action == "rock":
+            print (f"Paper beats Rock! {player_name} wins!")
+        else:
+            print (f"Scissors beats Paper! {player_name} loses!") 
+    elif u == "scissors": 
+        if computer_action == "paper":
+            print (f"Scissors beats Paper! {player_name} wins!")
+        else:
+            print (f"Rock beats Scissors! {player_name} loses!") 
+    return 
 
-load_dotenv()
-player_name = os.getenv("PLAYER_NAME", default = "Player One")
-print("Welcome", player_name, "Let's Play Rock, paper, scissors!")
+if __name__ == "__main__":
 
-# ASK FOR USER INPUT 
-u = input("Please choose one of: 'rock', 'paper', 'scissors':")
-print(player_name,"CHOSE:",u)
+    # WELCOME PLAYER 
 
-# VALIDATIONS 
-u = u.lower()
+    load_dotenv()
+    player_name = os.getenv("PLAYER_NAME", default = "Player One")
+    print("Welcome", player_name, "Let's Play Rock, paper, scissors!")
 
-if u != 'rock' and u != 'paper' and u != 'scissors':
-    print("Invalid choice: Please try again.")
-    exit()
-    
-# COMPUTER CHOICE 
+    # ASK FOR USER INPUT 
+    u = input("Please choose one of: 'rock', 'paper', 'scissors':")
+    print(player_name,"CHOSE:",u)
 
-c = ['rock', 'paper', 'scissors']
-computer_action = choice(c)
-print("COMPUTER CHOSE:",computer_action)
+    # VALIDATIONS 
+    u = u.lower()
 
-# DETERMINE THE WINNER 
-# DISPLAYING RESULTS
+    if u != 'rock' and u != 'paper' and u != 'scissors':
+        print("Invalid choice: Please try again.")
+        exit()
+        
+    # COMPUTER CHOICE 
 
-if u == computer_action:
-    print(f"Both players selected {u}. It's a tie!")
-elif u == "rock": 
-    if computer_action == "scissors" :
-        print (f"Rock beats Scissors. {player_name} wins!")
-    else:
-        print (f"Paper beats Rock. {player_name} loses!")
-elif u == "paper": 
-    if computer_action == "rock":
-        print (f"Paper beats Rock! {player_name} wins!")
-    else:
-        print (f"Scissors beats Paper! {player_name} loses!") 
-elif u == "scissors": 
-    if computer_action == "paper":
-        print (f"Scissors beats Paper! {player_name} wins!")
-    else:
-        print (f"Rock beats Scissors! {player_name} loses!")           
+    c = ['rock', 'paper', 'scissors']
+    computer_action = choice(c)
+    print("COMPUTER CHOSE:",computer_action)
 
-# END GAME
+    # DETERMINE THE WINNER 
+    # DISPLAYING RESULTS
 
-print(f"Thanks for playing {player_name}. Please play again!")
+    determine_winner(u,computer_action)         
+
+    # END GAME
+
+    print(f"Thanks for playing {player_name}. Please play again!")
