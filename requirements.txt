@@ -7,4 +7,6 @@ pytest
 
 python-dotenv
 
+pip install
+
 # feel free to update this file if you find need for additional packages in your solution
