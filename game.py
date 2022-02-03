@@ -11,7 +11,7 @@ print("Welcome", player_name, "Let's Play Rock, paper, scissors!")
 
 # ASK FOR USER INPUT 
 u = input("Please choose one of: 'rock', 'paper', 'scissors':")
-print("USER CHOSE:",u)
+print(player_name,"CHOSE:",u)
 
 # VALIDATIONS 
 u = u.lower()
@@ -24,7 +24,7 @@ if u != 'rock' and u != 'paper' and u != 'scissors':
 
 c = ['rock', 'paper', 'scissors']
 computer_action = choice(c)
-print("THE COMPUTER CHOSE:",computer_action)
+print("COMPUTER CHOSE:",computer_action)
 
 # DETERMINE THE WINNER 
 # DISPLAYING RESULTS
@@ -33,20 +33,20 @@ if u == computer_action:
     print(f"Both players selected {u}. It's a tie!")
 elif u == "rock": 
     if computer_action == "scissors" :
-        print ("Rock beats Scissors. You win!")
+        print (f"Rock beats Scissors. {player_name} wins!")
     else:
-        print ("Paper beats Rock. You lose!")
+        print (f"Paper beats Rock. {player_name} loses!")
 elif u == "paper": 
     if computer_action == "rock":
-        print ("Paper beats Rock! You win!")
+        print (f"Paper beats Rock! {player_name} wins!")
     else:
-        print ("Scissors beats Paper! You lose!") 
+        print (f"Scissors beats Paper! {player_name} loses!") 
 elif u == "scissors": 
     if computer_action == "paper":
-        print ("Scissors beats Paper! You win!")
+        print (f"Scissors beats Paper! {player_name} wins!")
     else:
-        print ("Rock beats Scissors! You lose!")           
+        print (f"Rock beats Scissors! {player_name} loses!")           
 
 # END GAME
 
-print("Thanks for playing. Please play again!")
+print(f"Thanks for playing {player_name}. Please play again!")
