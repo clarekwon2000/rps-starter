@@ -35,10 +35,15 @@ PLAYER_NAME = "Your Name"
 ```
 ex) PLAYER_NAME = "Clare" 
 
-Update Requirements.txt 
+Write in Requirements.txt file, 
 
 ```sh
 python-dotenv
+```
+Update package dependencies
+
+```sh
+pip install -r requirements.txt
 ```
 
 In your game.py file, 
