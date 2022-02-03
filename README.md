@@ -31,6 +31,16 @@ ex) PLAYER_NAME = "Clare" python game.py
 PLAYER_NAME = "Your Name" 
 ex) PLAYER_NAME = "Clare" 
 
+Update Requirements.txt 
+
+python-dotenv
+
+In your game.py file, 
+
+from dotenv import load_dotenv
+load_dotenv()
+    player_name = os.getenv("PLAYER_NAME", default = "Player One")
+
 ## Usage
 
 Run the rock paper scissors game:
