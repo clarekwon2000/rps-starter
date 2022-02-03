@@ -36,7 +36,7 @@ if __name__ == "__main__":
 
     load_dotenv()
     player_name = os.getenv("PLAYER_NAME", default = "Player One")
-    print("Welcome", player_name, "Let's Play Rock, paper, scissors!")
+    print("Welcome", player_name,"!" "Let's Play Rock, paper, scissors!")
 
 # ASK FOR USER INPUT 
     u = input("Please choose one of: 'rock', 'paper', 'scissors':")
