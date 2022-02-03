@@ -2,7 +2,7 @@
 
 A Starter Repository for the [Rock Paper Scissors Exercise](https://github.com/prof-rossetti/intro-to-python/blob/main/exercises/rock-paper-scissors/README.md).
 
-# Setup the Repo
+## Setup the Repo
 
 Create a virtual environment:
 
