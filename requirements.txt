@@ -5,5 +5,6 @@
 # see: https://pypi.org/project/pytest/
 pytest
 
+python-dotenv
 
 # feel free to update this file if you find need for additional packages in your solution

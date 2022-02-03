@@ -1,11 +1,13 @@
 from itertools import repeat
 from random import choice
 import os
+from dotenv import load_dotenv
 
 # WELCOME PLAYER 
 
+load_dotenv()
 player_name = os.getenv("PLAYER_NAME", default = "Player One")
-print("Welcome"); player_name; print("Let's Play Rock, paper, scissors!")
+print("Welcome", player_name, "Let's Play Rock, paper, scissors!")
 
 # ASK FOR USER INPUT 
 u = input("Please choose one of: 'rock', 'paper', 'scissors':")
@@ -15,7 +17,7 @@ print("USER CHOSE:",u)
 u = u.lower()
 
 if u != 'rock' and u != 'paper' and u != 'scissors':
-    print("Invalid choice: Please select again.")
+    print("Invalid choice: Please try again.")
     exit()
     
 # COMPUTER CHOICE 
