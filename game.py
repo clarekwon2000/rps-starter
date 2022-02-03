@@ -40,7 +40,7 @@ if __name__ == "__main__":
 
 # ASK FOR USER INPUT 
     u = input("Please choose one of: 'rock', 'paper', 'scissors':")
-    print(player_name,"CHOSE:",u)
+    print("YOU CHOSE:",u)
 
 # VALIDATIONS 
     u = u.lower()
