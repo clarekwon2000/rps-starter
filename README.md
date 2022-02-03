@@ -21,28 +21,25 @@ Install package dependencies (mainly for testing):
 ```sh
 pip install -r requirements.txt
 ```
+## Pass Environment Variable 
+# Option 1: Command Line (Terminal) 
+
+PLAYER_NAME = "Your Name" python game.py
+ex) PLAYER_NAME = "Clare" python game.py
+
+# Option 2: Create an ".env." file in your repository
+PLAYER_NAME = "Your Name" 
+ex) PLAYER_NAME = "Clare" 
 
 ## Usage
 
 Run the rock paper scissors game:
 
-PLAYER_NAME="clarekwon2000" python game.py
-```sh
-python game.py
-```
+PLAYER_NAME = "Clare" python game.py
 
 ## Testing
 
 Run tests:
 
-```sh
 pytest
-```
-## Environment Variable 
 
-## .env file 
-PLAYER_NAME = "Clare" python
-
-## or 
-## Pass Environment Variable 
-PLAYER_NAME = "Clare" python game.py

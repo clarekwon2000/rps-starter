@@ -1,4 +1,3 @@
-from itertools import repeat
 from random import choice
 import os
 from dotenv import load_dotenv
@@ -64,3 +63,4 @@ if __name__ == "__main__":
 # END GAME
 
     print(f"Thanks for playing {player_name}. Please play again!")
+
