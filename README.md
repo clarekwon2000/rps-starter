@@ -36,24 +36,28 @@ Option 1: Command Line (Terminal)
 ```sh
 PLAYER_NAME = "Your Name" python game.py
 ```
-ex) PLAYER_NAME = "Clare" python game.py
+    ex) PLAYER_NAME = "Clare" python game.py
 
 Option 2: Create an ".env." file in your repository
 ```sh
 PLAYER_NAME = "Your Name" 
 ```
-ex) PLAYER_NAME = "Clare" 
+    ex) PLAYER_NAME = "Clare" 
+
+
 
 Write in Requirements.txt file, 
 
 ```sh
 python-dotenv
 ```
+
 Update package dependencies
 
 ```sh
 pip install -r requirements.txt
 ```
+
 
 In your game.py file, 
 
